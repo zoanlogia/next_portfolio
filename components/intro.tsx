@@ -1,13 +1,12 @@
 'use client'
 
 import Image from 'next/image'
-import React from 'react'
 import profilePicture from '@/public/guillaume_flambard_profile.jpeg'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
-const intro = () => {
+const Intro = () => {
     return (
         <section className='mb-2 max-w-[50rem] sm:mb-0 text-center'>
             <div className="flex items-center justify-center">
@@ -40,4 +39,4 @@ const intro = () => {
     )
 }
 
-export default intro
+export default Intro
