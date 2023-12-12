@@ -19,9 +19,9 @@ const Intro = () => {
                 </div>
             </div>
 
-            <motion.p className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5]' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5]' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
                 <span className='font-bold'>Hello, I'm Guillaume Flambard.</span> I'm a <span className="font-bold">Front-End Developer</span> specialized in <span className="font-bold">Javascript.</span> I enjoy building <span className="font-bold">web applications</span> with <span className="underline">React (Next.js)</span>.
-            </motion.p>
+            </motion.h1>
 
             <motion.div className='flex flex-col sm:flex-row justify-center items-center gap-2 px-4 text-lg font-medium' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ type: 'spring', duration: 0.3, stiffness: 125, delay: 0.2 }}>
 
