@@ -1,14 +1,14 @@
 'use client'
 
-import SectionHeading from "./section-heading"
+import SectionHeading from "@/components/section-heading"
 import { motion } from 'framer-motion'
 
 
 const About = () => {
     return (
-        <motion.section className="mb-28 max-w-[45rem] leading-8" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{delay: 0.175, duration: 0.2}}>
+        <motion.section id="about" className="mb-28 max-w-[45rem] leading-8 scroll-mt-28" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{delay: 0.175, duration: 0.2}}>
             <SectionHeading>About me</SectionHeading>
-            <p>
+            <p className="text-center">
                 <span className="font-medium underline">World traveler</span>🌏<span className="italic"> with an innate ability to connect with diverse cultures and individuals.</span><br /><br />
 
                 <span className="font-medium"></span>

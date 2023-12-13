@@ -8,7 +8,7 @@ import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
 const Intro = () => {
     return (
-        <section className='mb-2 max-w-[50rem] sm:mb-0 text-center'>
+        <section id='home' className='mb-2 max-w-[50rem] sm:mb-0 text-center scroll-mt-[100rem]'>
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'tween', duration: 0.2 }}>
@@ -19,11 +19,11 @@ const Intro = () => {
                 </div>
             </div>
 
-            <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5]' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
-                <span className='font-bold'>Hello, I'm Guillaume Flambard.</span> I'm a <span className="font-bold">Front-End Developer</span> specialized in <span className="font-bold">Javascript.</span> I enjoy building <span className="font-bold">web applications</span> with <span className="underline">React (Next.js)</span>.
+            <motion.h1 className='mb-10 mt-4 px-4 text-2xl !leading-[1.5]' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
+                <span className='font-semibold'>Hello, I'm Guillaume Flambard.</span> I'm a <span className="font-semibold">Front-End Developer</span> specialized in <span className="font-semibold">Javascript.</span> I enjoy building <span className="font-semibold">web applications</span> with <span className="underline">React (Next.js)</span>.
             </motion.h1>
 
-            <motion.div className='flex flex-col sm:flex-row justify-center items-center gap-2 px-4 text-lg font-medium' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ type: 'spring', duration: 0.3, stiffness: 125, delay: 0.2 }}>
+            <motion.div className='flex flex-col sm:flex-row justify-center items-center gap-2 px-4 text-lg' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ type: 'spring', duration: 0.3, stiffness: 125, delay: 0.2 }}>
 
                 <Link className='group bg-gray-950 text-white flex items-center gap-2 rounded-full px-7 py-3 outline-none focus:scale-[1.07] hover:scale-[1.07] hover:bg-gray-950 active:scale-105 transition' href='/#contact'>Contact me
                     <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
