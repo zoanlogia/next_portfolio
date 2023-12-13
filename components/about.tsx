@@ -1,12 +1,27 @@
 'use client'
 
 import SectionHeading from "@/components/section-heading"
+import { useActiveSectionContext } from "@/context/active-section-context"
 import { motion } from 'framer-motion'
+import { useEffect } from "react"
+import { useInView } from "react-intersection-observer"
 
 
 const About = () => {
+
+    const { ref, inView } = useInView({
+        threshold: 0.5
+    })
+    const { setActiveSection } = useActiveSectionContext()
+
+    useEffect(() => {
+        if (inView) {
+            setActiveSection('About')
+        }
+    }, [inView, setActiveSection])
+
     return (
-        <motion.section id="about" className="mb-28 max-w-[45rem] leading-8 scroll-mt-28" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{delay: 0.175, duration: 0.2}}>
+        <motion.section ref={ref} id="about" className="mb-28 max-w-[45rem] leading-8 scroll-mt-28" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.175, duration: 0.2 }}>
             <SectionHeading>About me</SectionHeading>
             <p className="text-center">
                 <span className="font-medium underline">World traveler</span>🌏<span className="italic"> with an innate ability to connect with diverse cultures and individuals.</span><br /><br />
