@@ -14,17 +14,17 @@ const Skills = () => {
             opacity: 0,
             y: 100
         },
-        animate: (index: number) => ({
-            opacity: 1,
-            y: 0,
-            transition: {
-                delay: 0.05 * index
-            }
-        })
+animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+        delay: 0.05 * index
+    }
+})
     }
 
     return (
-        <section ref={ref} className="text-center scroll-mt-28 max-w-[53rem] sm:mb-40">
+        <section id="skills" ref={ref} className="text-center scroll-mt-28 max-w-[53rem] sm:mb-40">
             <SectionHeading>My skills</SectionHeading>
             <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
                 {
