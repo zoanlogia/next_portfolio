@@ -2,6 +2,8 @@
 
 import { validateString, getErrorMessage } from "@/lib/utils"
 import { Resend } from "resend"
+import ContactFormEmail from "@/components/contact-form-email"
+import React from "react"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
@@ -15,32 +17,34 @@ const sendEmail = async (formData: FormData) => {
 
     if (!validateString(senderEmail, 200)) {
         return {
-            error: "senderEmail is not a string"
+            error: "Invalid sender email"
         }
     }
 
     if (!validateString(message, 1000)) {
         return {
-            error: "message is not a string"
+            error: "Invalid message"
         }
     }
 
+    let data
     try {
-        await resend.emails.send({
-            from: "<Contact formonboarding@resend.dev>",
+        data = await resend.emails.send({
+            from: "Contact form <formonboarding@resend.dev>",
             to: "g.flambard@gmail.com",
-            subject: "Contact form",
+            subject: "Message from contact form",
             reply_to: senderEmail as string,
-            react : "hello"
+            react: React.createElement(ContactFormEmail, {
+                message: message as string,
+                senderEmail: senderEmail as string
+            })
         })
     } catch (error: unknown) {
-
-
-
         return {
             error: getErrorMessage(error)
         }
     }
+    return { data }
 }
 
 export default sendEmail

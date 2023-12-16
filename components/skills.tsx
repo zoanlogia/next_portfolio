@@ -24,12 +24,12 @@ animate: (index: number) => ({
     }
 
     return (
-        <section id="skills" ref={ref} className="text-center scroll-mt-28 max-w-[53rem] sm:mb-40">
+        <section id="skills" ref={ref} className="text-center scroll-mt-28 max-w-[53rem] sm:mb-40 mb-28">
             <SectionHeading>My skills</SectionHeading>
             <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
                 {
                     skillsData.map((skill, index) => (
-                        <motion.li variants={fadeInAnimationsVariants} initial="initial" whileInView="animate" viewport={{ once: true }} custom={index} className="bg-white border border-black-/[0.1] rounded-xl px-5 py-2" key={index}>{skill}</motion.li>
+                        <motion.li variants={fadeInAnimationsVariants} initial="initial" whileInView="animate" viewport={{ once: true }} custom={index} className="bg-white border border-black/[0.1] rounded-xl px-5 py-2 dark:bg-white/10 dark:text-white/80" key={index}>{skill}</motion.li>
                     ))
                 }
             </ul>

@@ -36,11 +36,11 @@ const Intro = () => {
                     <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
                 </Link>
 
-                <a className='group bg-white flex items-center gap-2 rounded-full px-7 py-3 text-gray-700 outline-none focus:scale-[1.07] hover:scale-[1.07] active:scale-105 transition cursor-pointer borderBlack' href="/cv_guillaume_flambard_english.pdf" download>Download CV <HiDownload className="opacity-60 group-hover:translate-y-1" /></a>
+                <a className='group bg-white flex items-center gap-2 rounded-full px-7 py-3 outline-none focus:scale-[1.07] hover:scale-[1.07] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60' href="/cv_guillaume_flambard_english.pdf" download>Download CV <HiDownload className="opacity-60 group-hover:translate-y-1" /></a>
 
-                <a className='bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 outline-none focus:scale-[1.07] hover:scale-[1.07] active:scale-105 transition cursor-pointer borderBlack hover:text-gray-950' href="https://www.linkedin.com/in/guillaume-flambard/?locale=en_US" target='_blank'><BsLinkedin /></a>
+                <a className='bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 outline-none focus:scale-[1.07] hover:scale-[1.07] active:scale-105 transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/10 dark:text-white/60' href="https://www.linkedin.com/in/guillaume-flambard/?locale=en_US" target='_blank'><BsLinkedin /></a>
 
-                <a className='bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 outline-none focus:scale-[1.07] hover:scale-[1.07] active:scale-105 transition cursor-pointer borderBlack hover:text-gray-950' href="https://github.com/zoanlogia" target='_blank'><BsGithub /></a>
+                <a className='bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 outline-none focus:scale-[1.07] hover:scale-[1.07] active:scale-105 transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/10 dark:text-white/60' href="https://github.com/zoanlogia" target='_blank'><BsGithub /></a>
             </motion.div>
         </section>
     )
