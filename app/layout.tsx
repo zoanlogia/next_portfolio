@@ -32,6 +32,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Header />
             {children}
+            <SpeedInsights />
             <Toaster position='top-right' />
             <Footer />
             <ThemeSwitch />
