@@ -8,6 +8,7 @@ import Footer from '@/components/footer'
 import ThemeSwitch from '@/components/theme-switch'
 import ThemeContextProvider from '@/context/theme-context'
 import LanguageSwitcher from '@/components/language-switcher'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'] })
 
