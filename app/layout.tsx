@@ -16,6 +16,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Guillaume Flambard | Porfolio',
   description: 'Just a way to know me more...🍾',
+  verification: {
+    google : 'googlea8e4098e100c409c'
+  }
 }
 
 export default function RootLayout({
